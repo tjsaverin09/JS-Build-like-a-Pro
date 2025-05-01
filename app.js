@@ -1,0 +1,31 @@
+// template_skf0ewm
+// service_c0yweva
+// ucUmecxxJpdhWJay_
+
+function contact(event) {
+    event.preventDefault();
+    const loading = document.querySelector('.modal__overlay--loading')
+    const success = document.querySelector('.modal__overlay--success')
+    loading.classList += " modal__overlay--visible";
+    emailjs
+        .sendForm(
+            'service_c0yweva',
+            'template_skf0ewm',
+            event.target,
+            'ucUmecxxJpdhWJay_'
+        ).then(() => {
+            loading.classList.remove("modal__overlay--visible");
+            success.classList += " modal__overlay--visible";
+        }).catch(() => {
+            loading.classList.remove("modal__overlay--visible");
+            alert(
+                "The email service is temporarily unavailable. Please contact me directly at tjsaverin98@live.com"
+            )
+        })
+
+    
+        setTimeout(() => {
+
+        console.log('it worked 1')
+    }, 1000);
+}
