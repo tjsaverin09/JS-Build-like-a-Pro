@@ -38,6 +38,7 @@ button {
 
 section {
     background-color: rgb(245, 245, 245);
+    transition: all 400ms ease;
 }
 
 input, textarea {
@@ -136,6 +137,32 @@ input:focus, textarea:focus {
     width: 100%;
 }
 
+.dark-theme .title,
+.dark-theme .section__title, 
+.dark-theme .section__sub-title,
+.dark-theme .nav__link--anchor,
+.dark-theme .header__para,
+.dark-theme .fa-adjust {
+    color: #fff;
+}
+
+.dark-theme section {
+    background-color: #242424;
+}
+
+.dark-theme .scroll__icon {
+    border-color: #fff;
+}
+
+.dark-theme .scroll__icon:after,
+.dark-theme .link__hover-effect--black:after {
+    background-color: #fff;
+}
+
+.dark-theme .mail__btn {
+    background-color: #fff;
+    color: #242424;
+}
 /*
 
   LANDING PAGE
